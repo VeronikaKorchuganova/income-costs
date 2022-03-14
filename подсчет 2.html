@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="подсчет 2.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Подсчёт</h1>
+    </header>
+
+    <div class = "content">
+
+        <div class="sections">
+
+            <div class="sections_addition">
+                <span>Добавление</span>
+                <form class="addition_form">
+                    <select name="type">
+                        <option disabled selected>Выберите параметр</option>
+                        <option value="Доходы">Доходы</option>
+                        <option value="Расходы">Расходы</option>
+                    </select>
+
+                    <div id="input_container">
+                        <input type="number" name="value" placeholder="Введите значение" size= "20">
+                        <div id="error"></div>
+                    </div>
+
+                    <div id="form_buttons">
+                        <button data-action="add">Добавить</button>
+                        <button data-action="clear">Очистить</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="sections_income">
+                <span>Доходы</span>
+                <div class="container">
+                    <p></p>
+                </div>
+                <div class="income_result"></div>
+            </div>
+
+            <div class="sections_costs">
+                <span>Расходы</span>
+                <div class="container">
+                    <p></p>
+                </div>
+                <div class="costs_result"></div>
+            </div>
+
+        </div>
+
+        <div class="results">
+            <span>ИТОГО (руб):</span>
+            <div class="result_container"></div>
+        </div>        
+    </div>
+            
+    <script src = "подсчет 2.js"></script>
+
+</body>
+</html>
